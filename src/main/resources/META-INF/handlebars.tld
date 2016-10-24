@@ -8,8 +8,35 @@
     <uri>handlebars</uri>
 
     <tag>
-        <name>contactlenses</name>
-        <tag-class>handlebars.TestTag</tag-class>
+        <name>template</name>
+        <tag-class>handlebars.TemplateTag</tag-class>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
     </tag>
+
+    <tag>
+        <name>precompile</name>
+        <tag-class>handlebars.PrecompileTag</tag-class>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>wrapper</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <!-- TODO add a precompile tag -->
 
 </taglib>

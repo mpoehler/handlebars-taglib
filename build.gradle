@@ -21,4 +21,5 @@ targetCompatibility = JavaVersion.VERSION_1_7
 
 dependencies {
     compile 'javax.servlet.jsp:jsp-api:2.2'
+    compile 'com.github.jknack:handlebars:4.0.6'
 }
